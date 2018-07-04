@@ -16,26 +16,32 @@ public class TestLinkedStack {
 
   @Before
   public void setUp() {
+
     fixture = new LinkedStack<>();
   }
 
   @After
   public void tearDown() {
+
     fixture = null;
   }
 
   @Test
   public void testInitial() {
+
     assertTrue(fixture.isEmpty());
+
     try {
       fixture.pop();
       fail("java.util.NoSuchElementException expected");
+
     } catch (final NoSuchElementException ex) {
       // exception occurred => all good
     }
     try {
       fixture.peek();
       fail("java.util.NoSuchElementException expected");
+
     } catch (final NoSuchElementException ex) {
       // exception occurred => all good
     }

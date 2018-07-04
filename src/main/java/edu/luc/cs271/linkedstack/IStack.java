@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @param <E> The element type
  */
-public interface IStack<E> {
+public interface  IStack<E> {
   /**
    * Pushes an item onto the top of the stack and returns the item pushed.
    *
